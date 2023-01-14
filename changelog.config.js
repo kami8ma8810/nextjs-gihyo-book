@@ -37,18 +37,17 @@ module.exports = {
     },
     docs: {
       description: 'ドキュメントの更新',
-      emoji: '✏️',
+      emoji: '✏',
       value: 'docs',
     },
     feat: {
-      description:
-        '機能の追加、変更、削除（セマンティックバージョニングのマイナー以上）',
-      emoji: '🎸',
+      description: '機能の追加、変更、削除）',
+      emoji: '✨',
       value: 'feat',
     },
     fix: {
-      description: 'バグ修正（セマンティックバージョニングのパッチ相当）',
-      emoji: '🐛',
+      description: 'バグ修正',
+      emoji: '🐞',
       value: 'fix',
     },
     perf: {
@@ -58,7 +57,7 @@ module.exports = {
     },
     refactor: {
       description: 'リファクタリング',
-      emoji: '💡',
+      emoji: '🔨',
       value: 'refactor',
     },
     release: {
@@ -67,13 +66,14 @@ module.exports = {
       value: 'release',
     },
     style: {
-      description: 'フォーマッティングなどのコードのスタイル調整',
-      emoji: '💄',
+      description:
+        'コードのスタイル調整（マークアップ、フォーマット、セミコロン、etc）',
+      emoji: '👙',
       value: 'style',
     },
     test: {
       description: 'テストコードの変更',
-      emoji: '💍',
+      emoji: '🧪',
       value: 'test',
     },
   },

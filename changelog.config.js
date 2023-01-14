@@ -4,9 +4,11 @@ module.exports = {
   list: [
     'chore',
     'ci',
+    'config',
     'docs',
     'feat',
     'fix',
+    'package',
     'perf',
     'refactor',
     'release',
@@ -24,7 +26,7 @@ module.exports = {
     'issues',
     'lerna',
   ],
-  scopes: [],
+  scopes: ['なし', 'API', '環境構築', '設定ファイル', '型ファイル'],
   types: {
     chore: {
       description: 'ビルド関連や補助ツールの変更',
@@ -35,6 +37,11 @@ module.exports = {
       description: 'CI関連の変更',
       emoji: '🎡',
       value: 'ci',
+    },
+    config: {
+      description: '設定ファイル',
+      emoji: '⚙',
+      value: 'config',
     },
     docs: {
       description: 'ドキュメントの更新',
@@ -50,6 +57,11 @@ module.exports = {
       description: 'バグ修正',
       emoji: '🐞',
       value: 'fix',
+    },
+    package: {
+      description: 'パッケージ',
+      emoji: '📦',
+      value: 'package',
     },
     perf: {
       description: 'パフォーマンス改善',
@@ -77,14 +89,13 @@ module.exports = {
       emoji: '🧪',
       value: 'test',
     },
-    messages: {
-      type: '型を選んでください:',
-      customScope: 'Select the scope this component affects:',
-      subject: 'Write a short, imperative mood description of the change:\n',
-      body: 'Provide a longer description of the change:\n ',
-      breaking: 'List any breaking changes:\n',
-      footer: 'Issues this commit closes, e.g #123:',
-      confirmCommit: 'The packages that this commit has affected\n',
-    },
+  },
+  messages: {
+    type: 'コミットする内容はどの型ですか:',
+    scope: 'コミットが影響するスコープを選んでください:',
+    subject: '変更内容を簡潔に書いてください:\n',
+    body: '変更内容の詳細があれば書いてください:\n ',
+    breaking: '重要な変更があれば書いてください:\n',
+    issues: 'このコミットで閉じるIssuesがあれば書いてください。例： #123:',
   },
 };

@@ -6,7 +6,8 @@
     "dev": "next dev -p 7070",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "commit": "git cz"
   },
   "dependencies": {
     "@next/font": "13.1.1",
@@ -23,6 +24,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.4.1",
     "@commitlint/config-conventional": "^17.4.0",
+    "git-cz": "^4.9.0",
     "husky": "^8.0.3"
   }
 }

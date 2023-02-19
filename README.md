@@ -1,5 +1,7 @@
 # TypeScriptとReact/Next.jsでつくる実践Webアプリケーション
 
+https://github.com/gihyo-book/ts-nextbook-app/blob/main/package.json
+
 # commitlint
 
 ## <型> 一覧
